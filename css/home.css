@@ -118,14 +118,14 @@ body {
 
 .attributions {
     top: 1.5rem;
-    right: 2rem;
+    right: 1.4rem;
     font-size: 0.7rem;
 }
 
 .author {
     bottom: 1.5rem;
-    right: 2rem;
-    font-size: 0.875rem;
+    right: 1.4rem;
+    font-size: 0.7rem;
 }
 
 @media screen and (max-height : 460px) {
@@ -158,16 +158,8 @@ body {
         width: 400px;
     }
 
-    .attributions {
-        top: 1.5rem;
-        right: 2rem;
-        font-size: 0.7rem;
-    }
-    
-    .author {
-        bottom: 1.5rem;
-        right: 2rem;
-        font-size: 0.9rem;
+    .attributions , .author{
+        font-size: 0.8em;
     }
 }
 
