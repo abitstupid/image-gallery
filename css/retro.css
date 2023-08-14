@@ -1,0 +1,23 @@
+/* RETRO THEME */
+body {
+    background: #8F5AFF url("");
+}
+#themes , #viewer , #thumb-bar , #change-bg {
+    background: #ffffff;
+    border-radius: 0px;
+    -webkit-box-shadow: 10px -10px 0px -4px #404040;
+    -moz-box-shadow: 10px -10px 0px -4px #404040;
+    box-shadow: 10px -10px 0px -4px #404040;
+
+    /* backdrop-filter: blur(8.5px); */
+    /* -webkit-backdrop-filter: blur(8.5px); */
+    border: 2px solid #404040;
+        /* background-image: radial-gradient(
+            circle at center,
+            black 0.25rem,
+            transparent 0
+        ), radial-gradient(circle at center, black 0.25rem, transparent 0);
+        background-size: 1.3rem 1.3rem;
+        background-position: 0 0, 0.65rem 0.65rem; */
+
+}
