@@ -20,6 +20,20 @@
     /* outline: 1px solid rgb(41, 148, 255); */
 }
 
+a , a:link,  a:visited  , a:focus, .author-name {
+    text-decoration : none !important;
+    color:#8F5AFF !important;
+}
+
+a:active , a:hover {
+    color:#611bf9 !important;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
 .pointer {
     cursor: pointer;
 }

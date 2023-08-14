@@ -93,7 +93,7 @@ for (const image of images) {
     const newImage = document.createElement("img");
     newImage.setAttribute("src", `assets/${image}`);
     newImage.setAttribute("class", `${image} thumb-img`);
-    newImage.style.border = "2px solid #404040";
+    newImage.style.border = "1px solid #404040";
 
     thumbImgContainer.appendChild(newImage);
 
@@ -102,7 +102,6 @@ for (const image of images) {
     })
 }
 
-// viewer 
 
 
 
