@@ -81,12 +81,6 @@ function setTheme(datasetTheme) {
     localStorage.setItem('style', datasetTheme);
 }
 
-// viewer 
-
-thumbBar.addEventListener("click", (e) =>{
-    fullImg.src = e.target.src;
-})
-
 // thumbBar 
 const images = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image7.svg","image8.svg","image9.jpg","image10.jpg", "image11.svg" ,"image12.jpg" , "image13.jpg"];
 
@@ -102,7 +96,14 @@ for (const image of images) {
     newImage.style.border = "2px solid #404040";
 
     thumbImgContainer.appendChild(newImage);
+
+    newImage.addEventListener("click", (e) =>{
+        fullImg.src = e.target.src;
+    })
 }
+
+// viewer 
+
 
 
 
