@@ -1,8 +1,7 @@
 /* DARK THEME */
-#themes , #viewer , #thumb-bar{
+#themes , #viewer , #thumb-bar, #author , #attributions {
 
     background: #404040;
-    border-radius: 8px;
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
     /* backdrop-filter: blur(8.5px); */
     /* -webkit-backdrop-filter: blur(8.5px); */

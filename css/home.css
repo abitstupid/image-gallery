@@ -5,8 +5,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -14,6 +14,8 @@ body {
 }
 
 /* Height and Width of all Sections */
+
+
 #themes , #viewer , #thumb-bar {
     width: 80vw;
 }
@@ -26,9 +28,11 @@ body {
     height: 300px;
 }
 
+
+
 /* Container */
 .container {
-    height: 100vh;
+    height: calc(100vh - 2.5rem);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -37,6 +41,15 @@ body {
     row-gap: 1.5em;
     position: relative;
 }
+
+#themes , #thumb-bar {
+    border-radius: 8px;
+}
+
+#viewer {
+    border-radius: 16px;
+}
+
 
 /* THEMES */
 .section-1 {
@@ -108,25 +121,21 @@ body {
     transform: scale(1.1);
 } 
 
-/* CREDIT */
-.author , .attributions {
-    position: absolute;
-    background-color: #fff;
-    padding: 8px;
+section#credits {
+    height: 2.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+#attributions {
+    display: inline-block;
+    padding: 4px;
+    font-size: 14px;
     border-radius: 4px;
 }
 
-.attributions {
-    top: 1.5rem;
-    right: 1.4rem;
-    font-size: 0.7rem;
-}
-
-.author {
-    bottom: 1.5rem;
-    right: 1.4rem;
-    font-size: 0.7rem;
-}
 
 @media screen and (max-height : 460px) {
     .container {
@@ -161,6 +170,7 @@ body {
     .attributions , .author{
         font-size: 0.8em;
     }
+
 }
 
 @media screen and (min-width : 768px) {
@@ -180,6 +190,15 @@ body {
         min-width: 24px;
         max-width: 24px;
     }
+
+    #viewer {
+        border-radius: 24px;
+    }
+
+    .tabs {
+        width: 40vw;
+    }
+    
 }
 
 @media screen and (min-width : 1200px) {
@@ -189,6 +208,10 @@ body {
 
     #viewer {
         width: 750px;
+    }
+
+    .container {
+        height: calc(100vh - 2.5rem);
     }
 }
 

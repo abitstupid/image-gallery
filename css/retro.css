@@ -2,16 +2,16 @@
 body {
     background: #8F5AFF url("");
 }
-#themes , #viewer , #thumb-bar , #change-bg {
+#themes , #viewer , #thumb-bar , #change-bg , #author , #attributions {
     background: #ffffff;
     border-radius: 0px;
     -webkit-box-shadow: 10px -10px 0px -4px #404040;
     -moz-box-shadow: 10px -10px 0px -4px #404040;
     box-shadow: 10px -10px 0px -4px #404040;
+    border: 2px solid #404040;
 
     /* backdrop-filter: blur(8.5px); */
     /* -webkit-backdrop-filter: blur(8.5px); */
-    border: 2px solid #404040;
         /* background-image: radial-gradient(
             circle at center,
             black 0.25rem,
@@ -20,4 +20,8 @@ body {
         background-size: 1.3rem 1.3rem;
         background-position: 0 0, 0.65rem 0.65rem; */
 
+}
+a , a:link,  a:visited  , a:focus, .author-name {
+    text-decoration : none !important;
+    color:#404040 !important;
 }
